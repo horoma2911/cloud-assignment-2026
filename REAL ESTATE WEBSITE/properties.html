@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOROMA REAL ESTATE - Properties</title>
+    <!-- Google Font Poppins -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="images/logo.png" alt="HOROMA REAL ESTATE Logo" class="logo-img">
+                HOROMA <span>REAL ESTATE</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="properties.html">Properties</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Properties Page Content -->
+    <section class="properties-page">
+        <h2>All Properties</h2>
+        
+        <!-- Filter Section -->
+        <div class="filter-section">
+            <select id="locationFilter">
+                <option value="all">All Locations</option>
+                <option value="dar-es-salaam">Dar es Salaam</option>
+                <option value="arusha">Arusha</option>
+                <option value="dodoma">Dodoma</option>
+                <option value="mwanza">Mwanza</option>
+                <option value="zanzibar">Zanzibar</option>
+                <option value="morogoro">Morogoro</option>
+            </select>
+            <select id="typeFilter">
+                <option value="all">All Types</option>
+                <option value="sale">For Sale</option>
+                <option value="rent">For Rent</option>
+                <option value="land">Land</option>
+            </select>
+        </div>
+
+        <!-- Properties Grid -->
+        <div class="properties-grid">
+            <!-- Property 1 -->
+            <div class="property-card" data-location="dar-es-salaam" data-type="sale">
+                <img src="images/house%201.jpeg" alt="Luxury Villa" class="property-img">
+                <div class="property-info">
+                    <h3>Luxury Villa in Oysterbay</h3>
+                    <p class="location">Dar es Salaam</p>
+                    <p class="price">TZS 450,000,000</p>
+                    <p class="details">4 Beds | 3 Baths | 500 sqm</p>
+                </div>
+            </div>
+
+            <!-- Property 2 -->
+            <div class="property-card" data-location="dar-es-salaam" data-type="rent">
+                <img src="images/house%202.jpeg" alt="Apartment" class="property-img">
+                <div class="property-info">
+                    <h3>Modern Apartment in Msasani</h3>
+                    <p class="location">Dar es Salaam</p>
+                    <p class="price">TZS 1,500,000/month</p>
+                    <p class="details">2 Beds | 2 Baths | 120 sqm</p>
+                </div>
+            </div>
+
+            <!-- Property 3 -->
+            <div class="property-card" data-location="dar-es-salaam" data-type="sale">
+                <img src="images/house%203.jpeg" alt="Office Space" class="property-img">
+                <div class="property-info">
+                    <h3>Commercial Office in CBD</h3>
+                    <p class="location">Dar es Salaam</p>
+                    <p class="price">TZS 320,000,000</p>
+                    <p class="details">5 Rooms | 200 sqm</p>
+                </div>
+            </div>
+
+            <!-- Property 4 -->
+            <div class="property-card" data-location="arusha" data-type="sale">
+                <img src="images/house%204.jpeg" alt="Family House" class="property-img">
+                <div class="property-info">
+                    <h3>Family Home in Njiro</h3>
+                    <p class="location">Arusha</p>
+                    <p class="price">TZS 280,000,000</p>
+                    <p class="details">4 Beds | 3 Baths | 350 sqm</p>
+                </div>
+            </div>
+
+            <!-- Property 5 -->
+            <div class="property-card" data-location="arusha" data-type="rent">
+                <img src="images/house%205.jpeg" alt="Apartment" class="property-img">
+                <div class="property-info">
+                    <h3>Cozy Apartment in Kaloleni</h3>
+                    <p class="location">Arusha</p>
+                    <p class="price">TZS 900,000/month</p>
+                    <p class="details">2 Beds | 1 Bath | 90 sqm</p>
+                </div>
+            </div>
+
+            <!-- Property 6 -->
+            <div class="property-card" data-location="dodoma" data-type="sale">
+                <img src="images/house%206.jpeg" alt="House" class="property-img">
+                <div class="property-info">
+                    <h3>Modern House in Area 12</h3>
+                    <p class="location">Dodoma</p>
+                    <p class="price">TZS 180,000,000</p>
+                    <p class="details">3 Beds | 2 Baths | 250 sqm</p>
+                </div>
+            </div>
+
+            <!-- Property 7 -->
+            <div class="property-card" data-location="dodoma" data-type="land">
+                <img src="images/house%201.jpeg" alt="Land" class="property-img">
+                <div class="property-info">
+                    <h3>Vacant Land in Area 8</h3>
+                    <p class="location">Dodoma</p>
+                    <p class="price">TZS 35,000,000</p>
+                    <p class="details">800 sqm</p>
+                </div>
+            </div>
+
+            <!-- Property 8 -->
+            <div class="property-card" data-location="mwanza" data-type="sale">
+                <img src="images/house%202.jpeg" alt="Lake View House" class="property-img">
+                <div class="property-info">
+                    <h3>Lake View Residence</h3>
+                    <p class="location">Mwanza</p>
+                    <p class="price">TZS 220,000,000</p>
+                    <p class="details">4 Beds | 3 Baths | 400 sqm</p>
+                </div>
+            </div>
+
+            <!-- Property 9 -->
+            <div class="property-card" data-location="mwanza" data-type="rent">
+                <img src="images/house%203.jpeg" alt="Apartment" class="property-img">
+                <div class="property-info">
+                    <h3>Apartment in Rock City</h3>
+                    <p class="location">Mwanza</p>
+                    <p class="price">TZS 750,000/month</p>
+                    <p class="details">2 Beds | 1 Bath | 95 sqm</p>
+                </div>
+            </div>
+
+            <!-- Property 10 -->
+            <div class="property-card" data-location="zanzibar" data-type="sale">
+                <img src="images/house%204.jpeg" alt="Beach House" class="property-img">
+                <div class="property-info">
+                    <h3>Beachfront Bungalow</h3>
+                    <p class="location">Zanzibar</p>
+                    <p class="price">TZS 380,000,000</p>
+                    <p class="details">3 Beds | 2 Baths | 300 sqm</p>
+                </div>
+            </div>
+
+            <!-- Property 11 -->
+            <div class="property-card" data-location="zanzibar" data-type="rent">
+                <img src="images/house%205.jpeg" alt="Villa" class="property-img">
+                <div class="property-info">
+                    <h3>Stone Town Apartment</h3>
+                    <p class="location">Zanzibar</p>
+                    <p class="price">TZS 1,100,000/month</p>
+                    <p class="details">2 Beds | 2 Baths | 110 sqm</p>
+                </div>
+            </div>
+
+            <!-- Property 12 -->
+            <div class="property-card" data-location="morogoro" data-type="land">
+                <img src="images/house%206.jpeg" alt="Land" class="property-img">
+                <div class="property-info">
+                    <h3>Agricultural Land</h3>
+                    <p class="location">Morogoro</p>
+                    <p class="price">TZS 45,000,000</p>
+                    <p class="details">1,000 sqm</p>
+                </div>
+            </div>
+
+            <!-- Property 13 -->
+            <div class="property-card" data-location="morogoro" data-type="sale">
+                <img src="images/house%201.jpeg" alt="House" class="property-img">
+                <div class="property-info">
+                    <h3>Residential House</h3>
+                    <p class="location">Morogoro</p>
+                    <p class="price">TZS 150,000,000</p>
+                    <p class="details">3 Beds | 2 Baths | 200 sqm</p>
+                </div>
+            </div>
+
+            <!-- Property 14 -->
+            <div class="property-card" data-location="dar-es-salaam" data-type="land">
+                <img src="images/house%202.jpeg" alt="Land" class="property-img">
+                <div class="property-info">
+                    <h3>Investment Land in Kinondoni</h3>
+                    <p class="location">Dar es Salaam</p>
+                    <p class="price">TZS 85,000,000</p>
+                    <p class="details">1,200 sqm</p>
+                </div>
+            </div>
+
+            <!-- Property 15 -->
+            <div class="property-card" data-location="arusha" data-type="land">
+                <img src="images/house%203.jpeg" alt="Land" class="property-img">
+                <div class="property-info">
+                    <h3>Residential Plot in Njiro</h3>
+                    <p class="location">Arusha</p>
+                    <p class="price">TZS 65,000,000</p>
+                    <p class="details">1,000 sqm</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 HOROMA REAL ESTATE. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <div class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
